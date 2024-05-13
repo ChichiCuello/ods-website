@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          This is a React App 
+          Agustina Cuello
         </a>
       </header>
     </div>
