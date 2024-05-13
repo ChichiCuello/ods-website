@@ -77,19 +77,22 @@ p {
   line-height: 160%;
 }
 
-button {
+button{
   cursor: pointer;
   display: block;
+  border: none;
+  background: transparent;
+}
+.button {
   font-size: var(--button);
   font-weight: bold;
   color: var(--clr-white-bg);
   background-color: var(--clr-accent-yellow);
-  border: none;
   border-radius: 2rem;
   padding: 1rem 2rem;
 }
 
-button:hover{
+.button:hover{
   outline: 0.125rem solid var(--clr-accent-yellow);
   color: var(--clr-accent-yellow);
   background-color: var(--clr-white-bg);
@@ -97,12 +100,19 @@ button:hover{
 
 
 a {
-  font-size: var(--hyperlink);
-  font-weight: 600;
   color: var(--clr-gray-body);
 }
-a:hover{
+
+.hyperlink{
+  font-size: var(--hyperlink);
+  font-weight: 600;
+}
+.hyperlink:hover{
   color: var(--clr-primary-blue);
   text-decoration: none;
 }
 
+li{
+  text-decoration: none;
+  list-style: none;
+}

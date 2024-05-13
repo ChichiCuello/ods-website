@@ -1,0 +1,57 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10%;
+  background-color: var(--clr-white-bg);
+  box-shadow: var(--custom-shadow);
+  position: sticky;
+  top:0;
+}
+.big-menu{
+  display: none;
+}
+.small-menu{
+  cursor: pointer;
+}
+.popup-menu{
+  /* Position the popup menu for small screens */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100vh;
+  overflow-y: auto; /* Enable scrolling if needed */
+  padding: 2rem;
+  background-color: var(--clr-white-bg); /* Popup menu background color */
+  z-index: 100; /* Ensure the popup menu appears above other content */
+  }
+.popup-menu li {
+  font-size: var(--heading-4);
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.popup-menu li:focus{
+  color: var(--clr-primary-blue);
+}
+
+/* Show popup menu when isMenuOpen is true */
+.isMenuOpen .pop-menu {
+  display: block;
+}
+
+
+@media screen and (min-width: 45rem){
+  main{
+    color: blueviolet;
+  }
+  .small-menu{
+    display: none;
+  }
+  .big-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
