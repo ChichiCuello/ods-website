@@ -30,7 +30,7 @@ export const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <Link to="/"><img {...logo}></img></Link>
+      <Link to="/Inicio"><img {...logo}></img></Link>
       <a onClick={toggleMenu} className="menu-toggle">
         <IconContext.Provider value={{ size: 32 }}>
           {isMenuOpen ? (
@@ -43,7 +43,7 @@ export const Navbar = () => {
 
       {isMenuOpen? (
           <ul className="popup-menu">
-            <li><Link to="/">Inicio</Link></li>
+            <li><Link to="/Inicio">Inicio</Link></li>
             <li className="ods-list" onClick={toggleSubmenu}><a>Conoce los ODS 
            {isSubmenuOpen ? (
                 <FaAngleUp/> 
@@ -65,7 +65,7 @@ export const Navbar = () => {
           </ul>
       ) : (
       <div className="big-menu">
-        <li className="paragraph-2"><a href="./">Inicio</a></li>
+        <li className="paragraph-2"><Link to="/Inicio">Inicio</Link></li>
         <li className="paragraph-2 ods-list" onClick={toggleSubmenu}><a>Conoce los ODS 
            {isSubmenuOpen ? (
                 <FaAngleUp/> 
