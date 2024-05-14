@@ -56,35 +56,39 @@ export const Navbar = () => {
             {/* Submenu for "Conoce los ODS" can be added here conditionally based on isSubmenuOpen */}
             {isSubmenuOpen && (
               <ul className='submenu'>
-                <li>Ods 1</li>
-                <li>Ods 2</li>
-                <li>Ods 3</li>
-                <li>Ods 4</li>
-                <li>Ods 5</li>
-                <li>Ods 6</li>
-                <li>Ods 7</li>
-                <li>Ods 8</li>
-                <li>Ods 9</li>
-                <li>Ods 10</li>
-                <li>Ods 11</li>
-                <li>Ods 12</li>
-                <li>Ods 13</li>
-                <li>Ods 14</li>
-                <li>Ods 15</li>
-                <li>Ods 16</li>
-                <li>Ods 17</li>
+                  {/* Render 17 list items in columns with automatic wrapping */}
+                  {Array.from({ length: 17 }, (_, index) => (
+                    <li key={index + 1}>Ods {index + 1}</li>
+                  ))}
               </ul>
-
             )}
-
             <li>Recursos</li>
           </ul>
       ) : (
-      <ul className="big-menu">
+      <div className="big-menu">
         <li className="paragraph-2">Home</li>
-        <li className="paragraph-2">Conoce los ODS</li>
+        <li className="paragraph-2 ods-list">Conoce los ODS 
+        <a onClick={toggleSubmenu}>
+              {isSubmenuOpen ? (
+                <FaAngleUp/> 
+              ) : (
+                <FaAngleDown /> 
+              )}
+            </a>
+            </li>
+            {/* Submenu for "Conoce los ODS" can be added here conditionally based on isSubmenuOpen */}
+            {isSubmenuOpen && (
+              <>
+                <ul className='megamenu'>
+                  {/* Render 17 list items in columns with automatic wrapping */}
+                  {Array.from({ length: 17 }, (_, index) => (
+                    <li key={index + 1}>Ods {index + 1}</li>
+                  ))}
+              </ul>
+              </>
+            )}
         <li className="paragraph-2">Recursos</li>
-      </ul>
+      </div>
       )}
     </nav>
   );
