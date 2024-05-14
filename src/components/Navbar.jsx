@@ -29,7 +29,7 @@ export const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <a href="http://"><img {...logo}></img></a>
+      <a href="./"><img {...logo}></img></a>
       <a onClick={toggleMenu} className="menu-toggle">
         <IconContext.Provider value={{ size: 32 }}>
           {isMenuOpen ? (
@@ -42,17 +42,15 @@ export const Navbar = () => {
 
       {isMenuOpen? (
           <ul className="popup-menu">
-            <li>Home</li>
-            <li className="ods-list">
-            Conoce los ODS {/* More specific comment */}
-            <a onClick={toggleSubmenu}>
-              {isSubmenuOpen ? (
+            <li><a href="/">Inicio</a></li>
+            <li className="ods-list" onClick={toggleSubmenu}><a>Conoce los ODS 
+           {isSubmenuOpen ? (
                 <FaAngleUp/> 
               ) : (
                 <FaAngleDown /> 
               )}
             </a>
-            </li>
+        </li>
             {/* Submenu for "Conoce los ODS" can be added here conditionally based on isSubmenuOpen */}
             {isSubmenuOpen && (
               <ul className='submenu'>
@@ -62,20 +60,19 @@ export const Navbar = () => {
                   ))}
               </ul>
             )}
-            <li>Recursos</li>
+            <li><a href="">Recursos</a></li>
           </ul>
       ) : (
       <div className="big-menu">
-        <li className="paragraph-2">Home</li>
-        <li className="paragraph-2 ods-list">Conoce los ODS 
-        <a onClick={toggleSubmenu}>
-              {isSubmenuOpen ? (
+        <li className="paragraph-2"><a href="./">Inicio</a></li>
+        <li className="paragraph-2 ods-list" onClick={toggleSubmenu}><a>Conoce los ODS 
+           {isSubmenuOpen ? (
                 <FaAngleUp/> 
               ) : (
                 <FaAngleDown /> 
               )}
             </a>
-            </li>
+        </li>
             {/* Submenu for "Conoce los ODS" can be added here conditionally based on isSubmenuOpen */}
             {isSubmenuOpen && (
               <>
@@ -87,7 +84,7 @@ export const Navbar = () => {
               </ul>
               </>
             )}
-        <li className="paragraph-2">Recursos</li>
+        <li className="paragraph-2"><a href="">Recursos</a></li>
       </div>
       )}
     </nav>

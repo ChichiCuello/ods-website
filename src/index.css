@@ -104,6 +104,7 @@ ul{
 a {
   color: var(--clr-gray-body);
   cursor: pointer;
+
 }
 
 .hyperlink{
@@ -112,7 +113,6 @@ a {
 }
 .hyperlink:hover{
   color: var(--clr-primary-blue);
-  text-decoration: none;
 }
 
 li{

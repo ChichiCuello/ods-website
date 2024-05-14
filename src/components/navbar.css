@@ -1,3 +1,6 @@
+a{
+  text-decoration: none;
+}
 .navbar{
   display: flex;
   justify-content: space-between;
@@ -33,14 +36,13 @@
   display: block;
 }
 
-.ods-list{
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-}
 .ods-list a {
   display: flex; /* Ensure the anchor tag is displayed as a flex container */
   align-items: center; /* Align the toggle icon vertically centered */
+
+}
+.ods-list svg{
+  margin-left: .5rem;
 }
 
 .submenu{
