@@ -98,9 +98,12 @@ button{
   background-color: var(--clr-white-bg);
 }
 
-
+ul{
+  margin: 0 0 0 0;
+}
 a {
   color: var(--clr-gray-body);
+  cursor: pointer;
 }
 
 .hyperlink{

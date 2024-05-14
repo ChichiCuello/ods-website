@@ -11,16 +11,14 @@
 .big-menu{
   display: none;
 }
-.small-menu{
-  cursor: pointer;
-}
+
 .popup-menu{
   /* Position the popup menu for small screens */
   position: fixed;
-  top: 0;
+  top: calc(26px + 2rem);
   left: 0;
-  width: 70%;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
   overflow-y: auto; /* Enable scrolling if needed */
   padding: 2rem;
   background-color: var(--clr-white-bg); /* Popup menu background color */
@@ -37,16 +35,29 @@
 }
 
 /* Show popup menu when isMenuOpen is true */
-.isMenuOpen .pop-menu {
+.isMenuOpen .popup-menu {
   display: block;
 }
 
+.ods-list{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.submenu{
+  overflow-y: auto; /* Enable scrolling if needed */
+}
+
+.submenu li{
+  font-size:var(--paragraph-1) ;
+}
 
 @media screen and (min-width: 45rem){
   main{
     color: blueviolet;
   }
-  .small-menu{
+  .menu-toggle{
     display: none;
   }
   .big-menu{
