@@ -57,7 +57,7 @@ export const Navbar = () => {
               <ul className='submenu'>
                   {/* Render 17 list items in columns with automatic wrapping */}
                   {Array.from({ length: 17 }, (_, index) => (
-                    <li key={index + 1}>Ods {index + 1}</li>
+                    <li key={index + 1}><Link to={`/ods/${index + 1}`}>Ods {index + 1}</Link></li>
                   ))}
               </ul>
             )}
@@ -80,12 +80,12 @@ export const Navbar = () => {
                 <ul className='megamenu'>
                   {/* Render 17 list items in columns with automatic wrapping */}
                   {Array.from({ length: 17 }, (_, index) => (
-                    <li key={index + 1}>Ods {index + 1}</li>
+                    <li key={index + 1}><Link to={`/ods/${index + 1}`}>Ods {index + 1}</Link></li>
                   ))}
               </ul>
               </>
             )}
-        <li className="paragraph-2"><Link to="/recursos">Recursos</Link></li>
+        <li className="paragraph-2"><Link to="/Recursos">Recursos</Link></li>
       </div>
       )}
     </nav>
