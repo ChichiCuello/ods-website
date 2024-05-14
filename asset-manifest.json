@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ods-website/static/css/main.f7c6ee3f.css",
-    "main.js": "/ods-website/static/js/main.9f657ee2.js",
+    "main.css": "/ods-website/static/css/main.8319d78f.css",
+    "main.js": "/ods-website/static/js/main.ce13996d.js",
     "static/js/453.3a570d54.chunk.js": "/ods-website/static/js/453.3a570d54.chunk.js",
     "static/media/ods-logo.png": "/ods-website/static/media/ods-logo.3b60a97d13dfc7404797.png",
     "index.html": "/ods-website/index.html",
-    "main.f7c6ee3f.css.map": "/ods-website/static/css/main.f7c6ee3f.css.map",
-    "main.9f657ee2.js.map": "/ods-website/static/js/main.9f657ee2.js.map",
+    "main.8319d78f.css.map": "/ods-website/static/css/main.8319d78f.css.map",
+    "main.ce13996d.js.map": "/ods-website/static/js/main.ce13996d.js.map",
     "453.3a570d54.chunk.js.map": "/ods-website/static/js/453.3a570d54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7c6ee3f.css",
-    "static/js/main.9f657ee2.js"
+    "static/css/main.8319d78f.css",
+    "static/js/main.ce13996d.js"
   ]
 }
