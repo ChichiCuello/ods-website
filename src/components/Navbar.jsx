@@ -1,7 +1,12 @@
 import React, { useState } from 'react'
 import './navbar.css';
-import odslogo from '../assets/ods-logo.png'
-import menusvg from '../assets/menu.svg'
+import odslogo from '../assets/ods-logo.png';
+import { IconContext } from "react-icons";
+import { FaBars } from "react-icons/fa";
+
+
+
+
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to track menu visibility
   const logo = {
@@ -10,10 +15,6 @@ export const Navbar = () => {
     width: '200'
   }
 
-  const menu = {
-    src: menusvg,
-    alt: 'menu',
-  }
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen); // Toggle menu visibility
   };
@@ -22,7 +23,10 @@ export const Navbar = () => {
   return (
     <nav className="navbar">
       <a href="http://"><img {...logo}></img></a>
-      <a onClick={toggleMenu} className="small-menu"><img {...menu}></img></a>
+      <a onClick={toggleMenu} className="small-menu">
+      <IconContext.Provider value={{size: 36 }}>
+        <FaBars />
+      </IconContext.Provider></a>
       {isMenuOpen? (
           <ul className="popup-menu">
             <li className="">Home</li>
