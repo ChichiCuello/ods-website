@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 import './navbar.css';
 import odslogo from '../assets/ods-logo.png';
 import { IconContext } from "react-icons";
@@ -29,7 +30,7 @@ export const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <a href="./"><img {...logo}></img></a>
+      <Link to="/"><img {...logo}></img></Link>
       <a onClick={toggleMenu} className="menu-toggle">
         <IconContext.Provider value={{ size: 32 }}>
           {isMenuOpen ? (
@@ -42,7 +43,7 @@ export const Navbar = () => {
 
       {isMenuOpen? (
           <ul className="popup-menu">
-            <li><a href="/">Inicio</a></li>
+            <li><Link to="/">Inicio</Link></li>
             <li className="ods-list" onClick={toggleSubmenu}><a>Conoce los ODS 
            {isSubmenuOpen ? (
                 <FaAngleUp/> 
@@ -60,7 +61,7 @@ export const Navbar = () => {
                   ))}
               </ul>
             )}
-            <li><a href="">Recursos</a></li>
+            <li><Link to="/recursos">Recursos</Link></li>
           </ul>
       ) : (
       <div className="big-menu">
@@ -84,7 +85,7 @@ export const Navbar = () => {
               </ul>
               </>
             )}
-        <li className="paragraph-2"><a href="">Recursos</a></li>
+        <li className="paragraph-2"><Link to="/recursos">Recursos</Link></li>
       </div>
       )}
     </nav>
