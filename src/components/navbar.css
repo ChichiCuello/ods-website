@@ -18,8 +18,8 @@
   top: calc(26px + 2rem);
   left: 0;
   width: 100%;
-  min-height: 100vh;
-  overflow-y: auto; /* Enable scrolling if needed */
+  min-height: 100%;
+  overflow-y: scroll; /* Enable scrolling if needed */
   padding: 2rem;
   background-color: var(--clr-white-bg); /* Popup menu background color */
   z-index: 100; /* Ensure the popup menu appears above other content */
@@ -46,7 +46,8 @@
 }
 
 .submenu{
-  overflow-y: auto; /* Enable scrolling if needed */
+  overflow-y: scroll; 
+  max-height: 70dvh;
 }
 
 .submenu li{

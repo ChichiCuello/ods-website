@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './navbar.css';
 import odslogo from '../assets/ods-logo.png';
 import { IconContext } from "react-icons";
