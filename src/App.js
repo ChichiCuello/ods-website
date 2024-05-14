@@ -1,10 +1,11 @@
-import './App.css';
+import React from 'react';
 import {Navbar} from './components/Navbar';
 
-function App() {
+function App(props) {
   return (
     <div className="main-container">
       <Navbar />
+      {props.children}
     </div>
   );
 }
