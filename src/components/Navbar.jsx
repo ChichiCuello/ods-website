@@ -43,7 +43,7 @@ export const Navbar = () => {
 
       {isMenuOpen? (
           <ul className="popup-menu">
-            <li><Link to="/">Inicio</Link></li>
+            <li><Link to="/ods-website">Inicio</Link></li>
             <li className="ods-list" onClick={toggleSubmenu}><a>Conoce los ODS 
            {isSubmenuOpen ? (
                 <FaAngleUp/> 
@@ -65,7 +65,7 @@ export const Navbar = () => {
           </ul>
       ) : (
       <div className="big-menu">
-        <li className="paragraph-2"><Link to="/">Inicio</Link></li>
+        <li className="paragraph-2"><Link to="/ods-website">Inicio</Link></li>
         <li className="paragraph-2 ods-list" onClick={toggleSubmenu}><a>Conoce los ODS 
            {isSubmenuOpen ? (
                 <FaAngleUp/> 
