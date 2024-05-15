@@ -30,7 +30,7 @@ export const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <Link to="/Inicio"><img {...logo}></img></Link>
+      <Link to="/"><img {...logo}></img></Link>
       <a onClick={toggleMenu} className="menu-toggle">
         <IconContext.Provider value={{ size: 32 }}>
           {isMenuOpen ? (
@@ -43,7 +43,7 @@ export const Navbar = () => {
 
       {isMenuOpen? (
           <ul className="popup-menu">
-            <li><Link to="/Inicio">Inicio</Link></li>
+            <li><Link to="/">Inicio</Link></li>
             <li className="ods-list" onClick={toggleSubmenu}><a>Conoce los ODS 
            {isSubmenuOpen ? (
                 <FaAngleUp/> 
@@ -57,15 +57,15 @@ export const Navbar = () => {
               <ul className='submenu'>
                   {/* Render 17 list items in columns with automatic wrapping */}
                   {Array.from({ length: 17 }, (_, index) => (
-                    <li key={index + 1}><Link to={`/ods/${index + 1}`}>Ods {index + 1}</Link></li>
+                    <li key={index + 1}><Link to={`ods-website/ods/${index + 1}`}>Ods {index + 1}</Link></li>
                   ))}
               </ul>
             )}
-            <li><Link to="/recursos">Recursos</Link></li>
+            <li><Link to="ods-website/recursos">Recursos</Link></li>
           </ul>
       ) : (
       <div className="big-menu">
-        <li className="paragraph-2"><Link to="/Inicio">Inicio</Link></li>
+        <li className="paragraph-2"><Link to="/">Inicio</Link></li>
         <li className="paragraph-2 ods-list" onClick={toggleSubmenu}><a>Conoce los ODS 
            {isSubmenuOpen ? (
                 <FaAngleUp/> 
@@ -80,12 +80,12 @@ export const Navbar = () => {
                 <ul className='megamenu'>
                   {/* Render 17 list items in columns with automatic wrapping */}
                   {Array.from({ length: 17 }, (_, index) => (
-                    <li key={index + 1}><Link to={`/ods/${index + 1}`}>Ods {index + 1}</Link></li>
+                    <li key={index + 1}><Link to={`ods-website/ods/${index + 1}`}>Ods {index + 1}</Link></li>
                   ))}
               </ul>
               </>
             )}
-        <li className="paragraph-2"><Link to="/Recursos">Recursos</Link></li>
+        <li className="paragraph-2"><Link to="ods-website/recursos">Recursos</Link></li>
       </div>
       )}
     </nav>

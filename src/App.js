@@ -11,12 +11,12 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/Inicio" element={<Inicio />} />
+        <Route path="/" element={<Inicio />} />
         {/* Generate routes for ODS components from ID 1 to 17 */}
         {Array.from({ length: 17 }, (_, index) => (
-        <Route key={index + 1} path={`/ods/${index + 1}`} element={<Ods id={index + 1} />} />
+        <Route key={index + 1} path={`ods-website/ods/${index + 1}`} element={<Ods id={index + 1} />} />
                 ))}
-        <Route path="/Recursos" element={<Recursos />} />
+        <Route path="ods-website/recursos" element={<Recursos />} />
       </Routes>
 
     </div>
