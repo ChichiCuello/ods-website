@@ -1,0 +1,17 @@
+/* .hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+}
+.hero > div{
+  z-index: 1; 
+}
+
+.hero > img{
+  z-index: 0; 
+} */
+.bkg-img {
+  background-image: url('../assets/wheel.png');
+  background-repeat: no-repeat;
+}
