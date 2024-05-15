@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import './navbar.css';
 import odslogo from '../assets/ods-logo.png';
@@ -70,8 +70,8 @@ export const Navbar = () => {
           </ul>
       ) : (
       <div className="big-menu">
-        <li className="paragraph-2"><Link to="/ods-website" onClick={closeSubmenu}>Inicio</Link></li>
-        <li className="paragraph-2 ods-list" onClick={toggleSubmenu}><a>Conoce los ODS 
+        <li className="paragraph-2 link-effect"><Link to="/ods-website" onClick={closeSubmenu}>Inicio</Link></li>
+        <li className="paragraph-2 ods-list link-effect" onClick={toggleSubmenu}><a>Conoce los ODS 
            {isSubmenuOpen ? (
                 <FaAngleUp/> 
               ) : (
@@ -90,7 +90,7 @@ export const Navbar = () => {
               </ul>
               </>
             )}
-        <li className="paragraph-2"><Link to="ods-website/recursos" onClick={closeSubmenu}>Recursos</Link></li>
+        <li className="paragraph-2 link-effect"><Link to="ods-website/recursos" onClick={closeSubmenu}>Recursos</Link></li>
       </div>
       )}
     </nav>
