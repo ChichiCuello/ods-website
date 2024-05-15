@@ -10,6 +10,7 @@ a{
   box-shadow: var(--custom-shadow);
   position: sticky;
   top:0;
+  z-index: 10000;
 }
 
 .popup-menu{

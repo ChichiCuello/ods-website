@@ -1,17 +1,55 @@
-/* .hero{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* .hero-section{
   position: relative; 
 }
-.hero > div{
+.section .hero-text{
+  position: relative;
   z-index: 1; 
 }
 
-.hero > img{
-  z-index: 0; 
-} */
-.bkg-img {
-  background-image: url('../assets/wheel.png');
+.div-img {
+  position: relative;
+  
+}
+
+.wheel-img{
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 50%;
+  opacity: 0.8;
+  z-index: 0;
+}  */
+
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  position: relative; /* Enable stacking elements on top */
+  overflow: hidden;
+
+}
+.section div {
+}
+.hero-section{
+  z-index: 1;
+}
+.hero-text{
+  margin: 0 10%;
+}
+.img{
+  background-image: url('../assets/wheel.png') ;
   background-repeat: no-repeat;
+  position: absolute; /* Position element on top */
+  top: 0; /* Align top edge with parent */
+  right: -175px; /* Align left edge with parent */
+  min-width: 560px; /* Match parent's width */
+  min-height: 750px; /* Match parent's height */
+  z-index: 0;
+}
+
+
+@media screen and (min-width: 45rem){
+  .hero-text{
+    max-width: 75ch;
+  }
 }
