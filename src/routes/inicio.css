@@ -1,35 +1,11 @@
-/* .hero-section{
-  position: relative; 
-}
-.section .hero-text{
-  position: relative;
-  z-index: 1; 
-}
-
-.div-img {
-  position: relative;
-  
-}
-
-.wheel-img{
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 50%;
-  opacity: 0.8;
-  z-index: 0;
-}  */
-
-
-.section {
+/* .section {
   display: flex;
   justify-content: space-between;
-  position: relative; /* Enable stacking elements on top */
+  position: relative; 
   overflow: hidden;
 
 }
-.section div {
-}
+
 .hero-section{
   z-index: 1;
 }
@@ -39,11 +15,11 @@
 .img{
   background-image: url('../assets/wheel.png') ;
   background-repeat: no-repeat;
-  position: absolute; /* Position element on top */
-  top: 0; /* Align top edge with parent */
-  right: -175px; /* Align left edge with parent */
-  min-width: 560px; /* Match parent's width */
-  min-height: 750px; /* Match parent's height */
+  position: absolute; 
+  top: 0; 
+  right: -175px; 
+  min-width: 560px; 
+  min-height: 750px; 
   z-index: 0;
 }
 
@@ -51,5 +27,132 @@
 @media screen and (min-width: 45rem){
   .hero-text{
     max-width: 75ch;
+  }
+  .img{
+    min-height: 100%;
+  }
+} */
+
+/* .hero-main {
+  display: flex;
+  justify-content: space-between;
+  position: relative; 
+  overflow: hidden;
+  height: 100vh; 
+
+.hero-section {
+  display: flex;
+  align-items: center; 
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/wheel.png'); 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: -20% top;
+  z-index: 0; 
+}
+
+.hero-text {
+  z-index: 1; 
+  position: relative; 
+  margin: 0 10%;
+}
+
+
+@media screen and (min-width: 45rem) {
+  .hero-text {
+    max-width: 75ch;
+  }
+} */
+/* 
+.hero-main {
+  display: flex;
+  justify-content: space-between;
+  position: relative; 
+  overflow: hidden;
+  height: 100vh; 
+}
+
+.hero-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-image {
+  width: 50%; /
+  transform-origin: right; 
+  transition: transform 0.3s ease; 
+}
+
+.hero-text {
+  z-index: 1; 
+  position: relative; 
+  margin: 0 10%;
+  text-align: left; 
+}
+
+@media screen and (min-width: 45rem) {
+
+
+  .hero-image:hover {
+    transform: rotate(-45deg); 
+  }
+}
+ */
+
+/* Mobile Styles (default) */
+.hero-main {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  overflow: hidden; /* Maintain responsiveness on smaller screens */
+}
+
+.hero-section {
+  display: flex;
+  width: 100%;
+  height: 100%; /* Match height of hero-main for full viewport coverage */
+}
+
+.hero-image {
+  position: absolute; /* Position image absolutely within hero-section */
+  right: -75%; /* Align to top-right corner */
+  height: 100%; /* Ensure image fills entire vertical space */
+  opacity: 0.5; /* Set initial opacity */
+  transition: opacity 0.3s ease; /* Smooth opacity transition */
+}
+
+.hero-text {
+  z-index: 1;
+  position: relative; /* Maintain relative positioning for flexibility */
+  display: flex; /* Allow flexbox for responsive text alignment */
+  flex-direction: column; /* Stack text vertically */
+  justify-content: center; /* Center text vertically */ /* Works across devices */
+  margin: 0 10%;
+}
+
+.hero-text .button {
+  align-self: start;
+}
+
+/* Desktop Styles (override mobile styles) */
+@media screen and (min-width: 45rem) {
+  .hero-text {
+    width: 50%; /* Allocate space for text on desktop */
+    align-items: flex-start; /* Align text to the left on desktop */
+    text-align: left; /* Left alignment on desktop */
+  }
+
+  .hero-image {
+    opacity: 1; /* Full opacity on hover for desktop */
+  }
+
+  .hero-image:hover {
+    opacity: 0.8; /* Reduce opacity on hover for visual feedback */
   }
 }
