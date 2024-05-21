@@ -123,3 +123,7 @@ li{
 .section{
   padding: 10rem 0;
 }
+
+.basic-margin {
+  margin: 0 10%;
+}
