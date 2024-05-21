@@ -1,138 +1,29 @@
-/* .section {
-  display: flex;
-  justify-content: space-between;
-  position: relative; 
-  overflow: hidden;
-
-}
-
-.hero-section{
-  z-index: 1;
-}
-.hero-text{
-  margin: 0 10%;
-}
-.img{
-  background-image: url('../assets/wheel.png') ;
-  background-repeat: no-repeat;
-  position: absolute; 
-  top: 0; 
-  right: -175px; 
-  min-width: 560px; 
-  min-height: 750px; 
-  z-index: 0;
-}
-
-
-@media screen and (min-width: 45rem){
-  .hero-text{
-    max-width: 75ch;
-  }
-  .img{
-    min-height: 100%;
-  }
-} */
-
-/* .hero-main {
-  display: flex;
-  justify-content: space-between;
-  position: relative; 
-  overflow: hidden;
-  height: 100vh; 
-
-.hero-section {
-  display: flex;
-  align-items: center; 
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-image: url('../assets/wheel.png'); 
-  background-repeat: no-repeat;
-  background-size: cover; 
-  background-position: -20% top;
-  z-index: 0; 
-}
-
-.hero-text {
-  z-index: 1; 
-  position: relative; 
-  margin: 0 10%;
-}
-
-
-@media screen and (min-width: 45rem) {
-  .hero-text {
-    max-width: 75ch;
-  }
-} */
-/* 
-.hero-main {
-  display: flex;
-  justify-content: space-between;
-  position: relative; 
-  overflow: hidden;
-  height: 100vh; 
-}
-
-.hero-section {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center; 
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.hero-image {
-  width: 50%; /
-  transform-origin: right; 
-  transition: transform 0.3s ease; 
-}
-
-.hero-text {
-  z-index: 1; 
-  position: relative; 
-  margin: 0 10%;
-  text-align: left; 
-}
-
-@media screen and (min-width: 45rem) {
-
-
-  .hero-image:hover {
-    transform: rotate(-45deg); 
-  }
-}
- */
-
 /* Mobile Styles (default) */
-.hero-main {
-  display: flex;
-  justify-content: space-between;
-  height: 100vh;
-  overflow: hidden; /* Maintain responsiveness on smaller screens */
-}
 
 .hero-section {
   display: flex;
-  width: 100%;
-  height: 100%; /* Match height of hero-main for full viewport coverage */
+  height: 100vh;
+  overflow: hidden; 
 }
-
+.hero-image-container{
+  position: relative;
+  flex: 1; 
+}
 .hero-image {
-  position: absolute; /* Position image absolutely within hero-section */
-  right: -75%; /* Align to top-right corner */
-  height: 100%; /* Ensure image fills entire vertical space */
-  opacity: 0.5; /* Set initial opacity */
-  transition: opacity 0.3s ease; /* Smooth opacity transition */
+  position: absolute; 
+  right: -20rem;
+  height: 100%; 
+  opacity: 0.5; 
+  transition: opacity 0.3s ease; 
+  object-fit: cover;
 }
 
 .hero-text {
   z-index: 1;
-  position: relative; /* Maintain relative positioning for flexibility */
-  display: flex; /* Allow flexbox for responsive text alignment */
-  flex-direction: column; /* Stack text vertically */
-  justify-content: center; /* Center text vertically */ /* Works across devices */
+  position: relative; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
   margin: 0 10%;
 }
 
@@ -140,19 +31,31 @@
   align-self: start;
 }
 
-/* Desktop Styles (override mobile styles) */
+
 @media screen and (min-width: 45rem) {
   .hero-text {
-    width: 50%; /* Allocate space for text on desktop */
-    align-items: flex-start; /* Align text to the left on desktop */
-    text-align: left; /* Left alignment on desktop */
+    width: 75ch;
+    align-items: flex-start; 
+    text-align: left;
   }
-
   .hero-image {
-    opacity: 1; /* Full opacity on hover for desktop */
+    opacity: 1;
+    transform: rotate(0deg); 
+    animation: initialRotate 2s ease-in-out; 
+    transition: transform 2s ease-in-out; 
   }
-
+  
   .hero-image:hover {
-    opacity: 0.8; /* Reduce opacity on hover for visual feedback */
+    transform: rotate(75deg);
+  }
+  
+  /* Keyframe animation for the initial load */
+  @keyframes initialRotate {
+    0% {
+      transform: rotate(-45deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
   }
 }
