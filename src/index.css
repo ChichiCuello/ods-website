@@ -31,12 +31,12 @@
 --heading-4-uppercase: 1.5rem; /* Bold, 24px */
 
 /* Paragraphs */
---paragraph-1: 1.25rem; /* Regular, 20px */
+--paragraph-1: 1.125rem; /* Regular, 18px */
 --paragraph-2: 1rem; /* Regular, 16px */
 
 /* Button / Link */
---button: 1.25rem; /* Bold, 20px */
---hyperlink: 1.25rem; /* SemiBold, 20px */
+--button: 1.125rem; /* Bold, 18px */
+--hyperlink: 1.125rem; /* SemiBold, 18px */
 }
 body{
   font-family: "Open Sans", sans-serif;

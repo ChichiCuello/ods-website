@@ -19,6 +19,7 @@
 }
 
 .hero-text {
+  color: var(--clr-primary-blue);
   z-index: 1;
   position: relative; 
   display: flex; 
@@ -26,9 +27,13 @@
   justify-content: center; 
 /*   margin: 0 10%; */
 }
+.hero-text h4{
+margin-bottom: .5rem;
+}
+
 .hero-text p {
-  font-size: 1rem;
   text-align: justify;
+  color: var(--clr-gray-body);
 }
 .hero-text .button {
   align-self: start;
