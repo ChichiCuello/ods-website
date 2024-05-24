@@ -2,7 +2,7 @@
 
 .hero-section {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden; 
 }
 .hero-image-container{
@@ -32,7 +32,6 @@ margin-bottom: .5rem;
 }
 
 .hero-text p {
-  text-align: justify;
   color: var(--clr-gray-body);
 }
 .hero-text .button {

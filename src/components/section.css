@@ -1,0 +1,17 @@
+.flex-container{
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 2rem;
+}
+
+
+@media screen and (min-width: 45rem){
+.flex-container{
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+.second{
+  flex-direction: row-reverse;
+}
+}

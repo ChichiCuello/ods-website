@@ -6,11 +6,21 @@ const data = {
   button: 'QUIERO CONSTRUIR UN FUTURO MEJOR'
   },
   sectionOne:{
-    h2: 'This is an h2 heading',
+    h2: '¿QUÉ SON LOS ODS?',
+    p: 'La sigla ODS hace referencia a los objetivos de desarrollo sostenible que integran la Agenda 2030 establecida por la Organización de las Naciones Unidas. Se trata de una serie de conceptos interconectados y pensados estratégicamente que deben lograrse para alcanzar un futuro más sostenible para toda la humanidad. Su aprobación se dio en el año 2015, y buscan orientar el trabajo de todos los países hacia el año 2030 para acabar con la pobreza, generar mayor igualdad de oportunidades y garantizar el cuidado del planeta.'
+  },
+  sectionTwo:{
+    h2: 'Y, ¿DE QUÉ SE ENCARGA LA ONU?',
     p: {
-      first: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a venenatis diam. Vestibulum varius felis eros, sed lobortis est sagittis vel. Cras nec justo turpis. Integer eu pretium nunc, non placerat tortor. Fusce sed faucibus ipsum, ut mollis tellus. Nam nec sapien molestie, aliquet ex ac, semper dolor. Cras nisl leo, pellentesque a sollicitudin gravida, scelerisque id elit. Duis id commodo ligula, ac ultricies erat. Proin metus tortor, ornare a felis quis, cursus sollicitudin sapien. Pellentesque pellentesque erat elementum ornare eleifend. Cras ut sodales est. Integer id varius sem. Nulla facilisi. Donec in accumsan orci. Sed vestibulum nunc sed pulvinar cursus. Mauris faucibus nec arcu id facilisis. Cras lacinia dolor lacus. Donec scelerisque consequat lectus quis venenatis. Duis ligula felis, lacinia in tellus nec, dignissim tempus velit',
-      second: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a venenatis diam. Vestibulum varius felis eros, sed lobortis est sagittis vel. Cras nec justo turpis. Integer eu pretium nunc, non placerat tortor. Fusce sed faucibus ipsum, ut mollis tellus. Nam nec sapien molestie, aliquet ex ac, semper dolor. Cras nisl leo, pellentesque a sollicitudin gravida, scelerisque id elit. Duis id commodo ligula, ac ultricies erat. Proin metus tortor, ornare a felis quis, cursus sollicitudin sapien. Pellentesque pellentesque erat elementum ornare eleifend. Cras ut sodales est. Integer id varius sem. Nulla facilisi. Donec in accumsan orci. Sed vestibulum nunc sed pulvinar cursus. Mauris faucibus nec arcu id facilisis. Cras lacinia dolor lacus. Donec scelerisque consequat lectus quis venenatis. Duis ligula felis, lacinia in tellus nec, dignissim tempus velit'
-    },
+      one:'La ONU es una organización internacional que trabaja por mantener la paz y la cooperación entre los Estados, proteger los derechos humanos y favorecer el cuidado del medio ambiente.',
+      two: 'Tiene 5 áreas de trabajo principales: mantener la paz y la seguridad internacionales, proteger los derechos humanos, distribuir ayuda humanitaria, apoyar el desarrollo sostenible y la acción climática y defender el derecho internacional.'}
+  },
+  sectionThree:{
+    h2:'¿PARA QUÉ SIRVEN LOS ODS?',
+    p:{
+      one:'Los 17 ODS y sus 169 metas son el instrumento guía del accionar de los Estados para que éstos puedan trabajar en favor de las 5 esferas que estructuran la Agenda 2030, las cuales son de importancia crítica para la sociedad: las personas, el planeta, la prosperidad, la paz, las alianzas.',
+      two: 'A su vez, los objetivos de desarrollo sostenible y las metas son de carácter integrado. Esto quiere decir que no pueden pensarse de manera desarticulada, dado que las decisiones o acciones que se tomen sobre un objetivo repercutirá también sobre los demás.'
+    } 
   }
 }
 
