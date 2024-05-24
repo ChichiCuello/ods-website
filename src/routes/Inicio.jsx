@@ -8,9 +8,10 @@ export const Inicio = () => {
   return (<>
       <div className='hero-section'>
         <div className='hero-text basic-margin'>
+        <h4>{data.hero.topHeader}</h4>
           <h1>{data.hero.h1}</h1>
-          <p>{data.hero.subHeader}</p>
-          <button className='button'>Know more</button>
+          <p>{data.hero.p}</p>
+          <button className='button'>{data.hero.button}</button>
         </div>
         <div className='hero-image-container'><img src={wheel} alt='Half Rotating Image' className='hero-image' /></div>
       </div>

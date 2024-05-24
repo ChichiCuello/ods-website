@@ -1,7 +1,9 @@
 const data = {
   hero: {
-  h1: 'This is a header',
-  subHeader: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis magnam molestiae sequi maxime quo modi ipsa, id omnis aut illum voluptatibus iure assumenda sint doloribus soluta obcaecati. Modi, quasi veniam?'
+  topHeader:'Recursos educativos para un desarrollo sostenible',
+  h1: 'ODS: ¿cómo aplicarlos en tu día a día?',
+  p: '¿Sabías que sos una pieza clave en la construcción de un futuro mejor? Conocé los 17 objetivos de desarrollo sostenible de la Agenda 2030 y accedé a recursos educativos que te ayudarán a hacer la diferencia desde tu casa, tu trabajo y tu comunidad.',
+  button: 'QUIERO CONSTRUIR UN FUTURO MEJOR'
   },
   sectionOne:{
     h2: 'This is an h2 heading',
