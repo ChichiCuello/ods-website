@@ -20,7 +20,10 @@ const data = {
     p:{
       one:'Los 17 ODS y sus 169 metas son el instrumento guía del accionar de los Estados para que éstos puedan trabajar en favor de las 5 esferas que estructuran la Agenda 2030, las cuales son de importancia crítica para la sociedad: las personas, el planeta, la prosperidad, la paz, las alianzas.',
       two: 'A su vez, los objetivos de desarrollo sostenible y las metas son de carácter integrado. Esto quiere decir que no pueden pensarse de manera desarticulada, dado que las decisiones o acciones que se tomen sobre un objetivo repercutirá también sobre los demás.'
-    } 
+    }
+  },
+  goals: {
+    h2:'LOS 17 OBJETIVOS DE DESARROLLO SOSTENIBLE'
   }
 }
 

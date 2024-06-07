@@ -1,6 +1,7 @@
 import React from 'react';
 import './inicio.css'
 import Section from '../components/Section';
+import Goals from '../components/Goals';
 import wheel from '../assets/wheel.png'
 import data from '../data/data'
 
@@ -16,6 +17,7 @@ export const Inicio = () => {
         <div className='hero-image-container'><img src={wheel} alt='Half Rotating Image' className='hero-image' /></div>
       </div>
       <Section />
+      <Goals />
   </>
   )
 }
