@@ -1,17 +1,34 @@
 .flex-container{
   display: flex;
   flex-direction: column-reverse;
+  align-items: center;
   margin-bottom: 2rem;
 }
-
-
+.graphic{
+  position: relative;
+}
+.play-btn-a, .play-btn-b{
+  position: absolute;
+  font-size: 2rem;
+  color: var(--clr-accent-yellow);
+}
+.play-btn-a{
+  top: 60%;
+  left: 52%;
+}
+.play-btn-b{
+  top: 60%;
+  left: 22%;
+}
 @media screen and (min-width: 45rem){
 .flex-container{
   flex-direction: row;
   gap: 2rem;
-  align-items: center;
 }
 .second{
   flex-direction: row-reverse;
+}
+.play-btn-a:hover, .play-btn-b:hover{
+  color: var(--clr-body-gray);
 }
 }
