@@ -24,6 +24,16 @@ const data = {
   },
   goals: {
     h2:'LOS 17 OBJETIVOS DE DESARROLLO SOSTENIBLE'
+  },
+  cta:{
+    h2:'Y VOS, ¿QUERÉS HACER LA DIFERENCIA?',
+    p:{
+      one:'La construcción de un futuro mejor se logra gracias al aporte de todas las personas que habitamos el planeta. Aunque no lo creas, cada acción que realices desde tu casa, tu trabajo y tu comunidad, por pequeña que sea, suma y nos coloca más cerca de un horizonte con mayores posibilidades para todos.',
+      two:'Explorá nuestra sección “Recursos” y conocé formas concretas en las que podés colaborar, recursos educativos para aprender más sobre los ODS y enlaces útiles acerca de la temática.',
+      three:'Estás a un sólo click de empezar a generar un cambio.',
+      four:'¡Comencemos!'
+    },
+    button:'RECURSOS'
   }
 }
 
