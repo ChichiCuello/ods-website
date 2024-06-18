@@ -7,6 +7,7 @@ import Goals from '../components/Goals';
 import wheel from '../assets/wheel.png'
 import data from '../data/data'
 import Cta from '../components/Cta';
+import Footer from '../components/Footer';
 
 export const Inicio = () => {
   return (<>
@@ -22,6 +23,7 @@ export const Inicio = () => {
       <Section />
       <Goals />
       <Cta />
+      <Footer />
   </>
   )
 }
