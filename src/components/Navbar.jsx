@@ -51,9 +51,9 @@ export const Navbar = () => {
             <li><Link to="/ods-website" onClick={closeMenu}>Inicio</Link></li>
             <li className="ods-list" onClick={toggleSubmenu}><a>Conoce los ODS 
            {isSubmenuOpen ? (
-                <FaAngleUp/> 
+                <FaAngleUp/>
               ) : (
-                <FaAngleDown /> 
+                <FaAngleDown />
               )}
             </a>
         </li>
