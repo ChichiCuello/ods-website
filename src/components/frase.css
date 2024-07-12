@@ -1,0 +1,10 @@
+
+.frase h4 {
+  color: var(--clr-primary-blue);
+  font-style: italic;
+  text-align: center;
+}
+
+.frase .author {
+  text-align: right;
+}

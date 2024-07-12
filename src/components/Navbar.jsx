@@ -49,7 +49,7 @@ export const Navbar = () => {
       {isMenuOpen? (
           <ul className="popup-menu">
             <li><Link to="/ods-website" onClick={closeMenu}>Inicio</Link></li>
-            <li className="ods-list" onClick={toggleSubmenu}><a>Conoce los ODS 
+            <li className="ods-list" onClick={toggleSubmenu}><a>Conoce los ODS
            {isSubmenuOpen ? (
                 <FaAngleUp/>
               ) : (

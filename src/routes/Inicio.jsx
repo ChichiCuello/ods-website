@@ -7,6 +7,7 @@ import Goals from '../components/Goals';
 import wheel from '../assets/ruleta-colores-ods.png'
 import data from '../data/data'
 import Cta from '../components/Cta';
+import Frase from '../components/Frase'
 import Footer from '../components/Footer';
 
 export const Inicio = () => {
@@ -25,6 +26,7 @@ export const Inicio = () => {
       <Section />
       <Goals />
       <Cta />
+      <Frase />
       <Footer />
   </>
   )
