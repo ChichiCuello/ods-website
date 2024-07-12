@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/ods-website/static/css/main.712f6560.css",
-    "main.js": "/ods-website/static/js/main.d3fed27e.js",
+    "main.css": "/ods-website/static/css/main.6c83c82c.css",
+    "main.js": "/ods-website/static/js/main.f3fdbe66.js",
     "static/js/453.3a570d54.chunk.js": "/ods-website/static/js/453.3a570d54.chunk.js",
     "static/media/ODS-grafica-c.png": "/ods-website/static/media/ODS-grafica-c.c2f0127c84ce106adb2d.png",
-    "static/media/ODS-grafica-a.png": "/ods-website/static/media/ODS-grafica-a.dc916756a10616b7df90.png",
-    "static/media/ODS-grafica-b.png": "/ods-website/static/media/ODS-grafica-b.554e222de2185668bd00.png",
+    "static/media/ODS-grafica-texto.png": "/ods-website/static/media/ODS-grafica-texto.280c40c46d920894f7d5.png",
+    "static/media/ODS-grafica-texto-b.png": "/ods-website/static/media/ODS-grafica-texto-b.c0e2193c5a8da86683d7.png",
     "static/media/ods-logo.png": "/ods-website/static/media/ods-logo.3b60a97d13dfc7404797.png",
-    "static/media/wheel.png": "/ods-website/static/media/wheel.7827eed7861b810ed74f.png",
+    "static/media/ruleta-colores-ods.png": "/ods-website/static/media/ruleta-colores-ods.7827eed7861b810ed74f.png",
     "index.html": "/ods-website/index.html",
-    "main.712f6560.css.map": "/ods-website/static/css/main.712f6560.css.map",
-    "main.d3fed27e.js.map": "/ods-website/static/js/main.d3fed27e.js.map",
+    "main.6c83c82c.css.map": "/ods-website/static/css/main.6c83c82c.css.map",
+    "main.f3fdbe66.js.map": "/ods-website/static/js/main.f3fdbe66.js.map",
     "453.3a570d54.chunk.js.map": "/ods-website/static/js/453.3a570d54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.712f6560.css",
-    "static/js/main.d3fed27e.js"
+    "static/css/main.6c83c82c.css",
+    "static/js/main.f3fdbe66.js"
   ]
 }
