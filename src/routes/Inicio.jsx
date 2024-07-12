@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import Section from '../components/Section';
 import Goals from '../components/Goals';
-import wheel from '../assets/wheel.png'
+import wheel from '../assets/ruleta-colores-ods.png'
 import data from '../data/data'
 import Cta from '../components/Cta';
 import Footer from '../components/Footer';
@@ -18,7 +18,9 @@ export const Inicio = () => {
           <p>{data.hero.p}</p>
           <Link to="recursos"><button className='button'>{data.hero.button}</button></Link>
         </div>
-        <div className='hero-image-container'><img src={wheel} alt='Half Rotating Image' className='hero-image' /></div>
+        <div className='hero-image-container'>
+          <img src={wheel} alt='ícono de la ruleta de colores que representa los 17 objetivos de desarrollo sostenible propuestos por las Naciones Unidas' className='hero-image' />
+        </div>
       </div>
       <Section />
       <Goals />

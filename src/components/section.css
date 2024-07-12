@@ -7,17 +7,27 @@
 .graphic{
   position: relative;
 }
+.graphic .cta-title{
+  position: absolute;
+  font-weight: bold;
+  color: var(--clr-accent-yellow);
+  top: -1%;
+}
+.second .cta-title{
+  top: 45%;
+  left: 50%;
+}
 .play-btn-a, .play-btn-b{
   position: absolute;
   font-size: 2rem;
   color: var(--clr-accent-yellow);
 }
 .play-btn-a{
-  top: 60%;
+  top: 35%;
   left: 52%;
 }
 .play-btn-b{
-  top: 60%;
+  top: 75%;
   left: 22%;
 }
 @media screen and (min-width: 45rem){

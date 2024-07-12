@@ -3,29 +3,28 @@
 .hero-section {
   display: flex;
   min-height: 100vh;
-  overflow: hidden; 
+  overflow: hidden;
 }
 .hero-image-container{
   position: relative;
-  flex: 1; 
+  flex: 1;
 }
 .hero-image {
-  position: absolute; 
+  position: absolute;
   right: -20rem;
-  height: 100%; 
-  opacity: 0.5; 
-  transition: opacity 0.3s ease; 
+  height: 100%;
+  opacity: 0.25;
+  transition: opacity 0.3s ease;
   object-fit: cover;
 }
 
 .hero-text {
   color: var(--clr-primary-blue);
   z-index: 1;
-  position: relative; 
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
-/*   margin: 0 10%; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .hero-text h4{
 margin-bottom: .5rem;
@@ -38,24 +37,34 @@ margin-bottom: .5rem;
   align-self: start;
 }
 
+.hero-text.basic-margin{
+  margin: 10%;
+}
+
 
 @media screen and (min-width: 45rem) {
+  .hero-section h1{
+    font-size: var(--display-1);
+  }
   .hero-text {
     width: 75ch;
-    align-items: flex-start; 
+    align-items: flex-start;
     text-align: left;
   }
   .hero-image {
     opacity: 1;
-    transform: rotate(0deg); 
-    animation: initialRotate 2s ease-in-out; 
-    transition: transform 2s ease-in-out; 
+    transform: rotate(0deg);
+    animation: initialRotate 2s ease-in-out;
+    transition: transform 2s ease-in-out;
   }
-  
+  .hero-text.basic-margin{
+    margin: 0 10%;
+  }
+
   .hero-image:hover {
     transform: rotate(75deg);
   }
-  
+
   /* Keyframe animation for the initial load */
   @keyframes initialRotate {
     0% {
