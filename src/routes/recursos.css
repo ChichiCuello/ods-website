@@ -1,0 +1,67 @@
+.recursos h2{
+  padding: 1.5rem 0;
+  opacity: 0;
+}
+.recursos h2:hover{
+  color: var(--clr-accent-yellow);
+  cursor: pointer;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-out forwards;
+  text-align: left;
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease-out forwards;
+  text-align: right;
+}
+.recursos h2:nth-child(odd) {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.recursos h2:nth-child(even) {
+  animation: slideInRight 1s ease-out forwards;
+}
+.recursos h2:nth-child(1){
+  padding-top: 2rem;
+  animation-delay: 0s;
+}
+.recursos h2:nth-child(2){
+  animation-delay: 500ms;
+}
+.recursos h2:nth-child(3){
+  animation-delay: 1s;
+}
+.recursos h2:nth-child(4){
+  animation-delay: 1.5s;
+}.recursos h2:nth-child(5){
+  animation-delay: 2s;
+}
+
+.link{
+  font-size: var(--headding-h3);
+  color: var(--clr-accent-yellow);
+}
