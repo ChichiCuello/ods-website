@@ -1,5 +1,15 @@
+.recursos h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+.recursos p {
+  text-align: center;
+}
 .recursos h2{
-  padding: 1.5rem 0;
+  background-color: aquamarine;
+  border-top-right-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+  padding: 2rem 4rem ;
   opacity: 0;
 }
 .recursos h2:hover{

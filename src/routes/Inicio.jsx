@@ -14,7 +14,6 @@ export const Inicio = () => {
   return (<>
       <div className='hero-section'>
         <div className='hero-text basic-margin'>
-        <h4>{data.hero.topHeader}</h4>
           <h1>{data.hero.h1}</h1>
           <p>{data.hero.p}</p>
           <Link to="recursos"><button className='button'>{data.hero.button}</button></Link>

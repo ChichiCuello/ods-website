@@ -26,9 +26,6 @@
   flex-direction: column;
   justify-content: center;
 }
-.hero-text h4{
-margin-bottom: .5rem;
-}
 
 .hero-text p {
   color: var(--clr-gray-body);
